@@ -1,0 +1,23 @@
+[package]
+name = "mqtt_test"
+version = "0.0.1"
+authors = ["Siméon Marijon simeon.marijon@gorgy-timing.fr>"]
+
+[features]
+# no features by default
+default = []
+
+# use "ntpd" instead of "ntp" as name of NTP service (ntp for Debian, ntpd for Yocto)
+ntpd-service-name = []
+
+[dependencies]
+rumqtt             = { git = "https://github.com/AtherEnergy/rumqtt.git" }
+libc               = "*"
+dotenv             = "*"
+chrono             = "*"
+interfaces         = "*"
+derivation         = "*"
+enum_variants      = "*"
+bitfield           = "*"
+notify             = "*"
+quicli             = "*"
